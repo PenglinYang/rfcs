@@ -12,12 +12,16 @@ Since confidential computing is an emerging concept and solution for protecting 
 ## Scenarios
 ### Scenario 1: MEC(Multi-access edge computing) with Enarx
 In the MEC scenario, the edge computing infrastructure is deployed at the edge of network consumer. 
-For example, an MEC device could be deployed together with UPF(User Plain Function) beside a factory to support low latency applications. In this situation, both the factory and the operator want to make sure the edge computing environment is secure. Enarx could be used to provide remote attestation and trust execution environment, tbc 
-![image](https://user-images.githubusercontent.com/80935986/126891814-7d4ef8f6-a7a3-4b0d-b690-a94593205239.png)
-
+For example, an MEC platform could be deployed together with UPF(User Plain Function) beside a factory to support low latency applications. In addition, the architecture of MEC is based on NFV(Network  Function Virtualization), which is based on virtualization infrastructure like virtual machine and container. In this situation, the factory may want to make sure the edge computing environment is secure and the application context cannot be accessed by the operator. Enarx could be used to provide remote attestation and trust execution environment for this edge computing demand.
+![image](https://user-images.githubusercontent.com/80935986/126958816-0e28b23c-88d7-4497-bc0c-6589e96c4448.png)
+This above figure shows where the Enarx architecture could be deployed in MEC system. AS long as the Enarx client maintains the **session key(private key/toke?)** about the Enarx, it can fully trust the application and data which will not be leaked by MEC.
+#### issues need to clarify:
+* the workflow of key management
+* the workflow of orchestrator
 ### Scenario 2: NFV based 5G Core Network deployed in public Cloud with Enarx
 
-### Scenario 3: key management for 
+
+### Scenario 3: 
 
 ## References
 * ETSI NFV tbd
