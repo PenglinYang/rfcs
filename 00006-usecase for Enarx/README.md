@@ -17,12 +17,11 @@ For example, an MEC platform could be deployed together with UPF(User Plain Func
 <img src="https://user-images.githubusercontent.com/80935986/126958816-0e28b23c-88d7-4497-bc0c-6589e96c4448.png" width="500">
 The above figure shows where the Enarx architecture could be deployed in MEC system. AS long as the Enarx client maintains the KEEP instance key, it can fully trust the application and data which will not be leaked by MEC.
 
-### Scenario 2: EAP-TLS with Enarx
-
-
+### Scenario 2：Network Security Functions
+CC could be used in Network Security Function, which is based on NFV.
 
 
 ## References
 * ETSI GS MEC 003 V2.2.1(2020-12)
-* 
+* draft-ietf-i2nsf-applicability-18
 * 
